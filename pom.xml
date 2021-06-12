@@ -13,5 +13,6 @@
 	<modules>
 	<module>rest</module>
 	<module>algos</module>
+	<module>limits-service</module>
 	</modules>
 </project>
