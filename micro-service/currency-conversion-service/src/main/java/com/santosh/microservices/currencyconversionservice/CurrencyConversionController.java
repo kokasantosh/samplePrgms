@@ -1,5 +1,6 @@
 package com.santosh.microservices.currencyconversionservice;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -12,6 +13,9 @@ import java.util.HashMap;
 @RestController
 public class CurrencyConversionController {
 
+    @Autowired
+    private CurrencyExchangeProxy currencyExchangeProxy;
+
     @GetMapping("/currency-exchange/from/{from}/to/{to}/quantity/{quantity}")
     public CurrencyConversion calculateCurrencyConversion(@PathVariable String from, @PathVariable String to, @PathVariable BigDecimal quantity) {
         HashMap<String, String> uriVariables = new HashMap<>();
@@ -21,5 +25,15 @@ public class CurrencyConversionController {
                 CurrencyConversion.class, uriVariables);
         CurrencyConversion currencyConversion = response.getBody();
         return new CurrencyConversion(currencyConversion.getId(), from, to, quantity, currencyConversion.getConversionMultiple(), quantity.multiply(currencyConversion.getConversionMultiple()), currencyConversion.getEnvironment());
+    }
+
+    @GetMapping("/currency-exchange-feign/from/{from}/to/{to}/quantity/{quantity}")
+    public CurrencyConversion calculateCurrencyConversionFeign(@PathVariable String from, @PathVariable String to, @PathVariable BigDecimal quantity) {
+
+        CurrencyConversion currencyConversion = currencyExchangeProxy.retrieveExchange(from, to);
+        return new CurrencyConversion(currencyConversion.getId(), from, to, quantity,
+                currencyConversion.getConversionMultiple(),
+                quantity.multiply(currencyConversion.getConversionMultiple()),
+                currencyConversion.getEnvironment());
     }
 }
