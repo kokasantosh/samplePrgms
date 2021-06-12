@@ -11,7 +11,7 @@
 
 	<packaging>pom</packaging>
 	<modules>
-	<module>rest-and-microservices</module>
+	<module>rest</module>
 	<module>algos</module>
 	</modules>
 </project>

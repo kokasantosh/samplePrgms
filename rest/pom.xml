@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.santosh.rest.webservices</groupId>
-	<artifactId>rest-and-microservices</artifactId>
+	<artifactId>rest</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>restful-web-services</name>
 	<description>Demo project for Spring Boot</description>
