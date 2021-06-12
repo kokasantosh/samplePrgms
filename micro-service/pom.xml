@@ -12,5 +12,6 @@
 	<packaging>pom</packaging>
 	<modules>
 	<module>limits-service</module>
+	<module>spring-cloud-config</module>
 	</modules>
 </project>
