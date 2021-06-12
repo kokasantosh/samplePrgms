@@ -127,3 +127,5 @@
 /misc.xml
 /modules.xml
 /vcs.xml
+/libraries/Maven__commons_codec_commons_codec_1_15.xml
+/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_13.xml
