@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	
 	<groupId>com.santosh.microservice</groupId>
-	<artifactId>microservice</artifactId>
+	<artifactId>micro-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>micro-service</name>
 	<description>Demo project</description>
