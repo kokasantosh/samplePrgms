@@ -126,3 +126,5 @@
 /.idea/libraries/Maven__org_springframework_spring_context_support_5_3_8.xml
 /.idea/libraries/Maven__org_springframework_spring_webflux_5_3_8.xml
 /.idea/libraries/Maven__xmlpull_xmlpull_1_1_3_1.xml
+/micro-service/micro-service.iml
+/.idea/samplePrgms1.iml
