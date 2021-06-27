@@ -12,9 +12,9 @@ public class FindSquare {
 
         // solution should be 2;
         System.out.println(findSquare(A, B, 2, 2, new TreeMap<Integer, Integer>())
-                //.values()
-                //.stream());
-                //.max(Comparator.comparing(Integer::valueOf)).get()
+//                .values()
+//                .stream()
+//                .max(Comparator.comparing(Integer::valueOf)).get()
         );
 
     }

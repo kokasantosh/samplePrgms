@@ -129,3 +129,9 @@
 /micro-service/micro-service.iml
 /.idea/samplePrgms1.iml
 /.idea/samplePgms.iml
+/algos/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+/algos/target/classes/com/sample/algo/FindSquare.class
+/algos/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+/algos/target/classes/com/sample/tree/PathFinder.class
+/.idea/samplePrgms_new.iml
+/algos/target/classes/com/sample/tree/TreeNode.class

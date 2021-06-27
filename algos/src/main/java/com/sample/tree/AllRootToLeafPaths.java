@@ -13,7 +13,7 @@ public class AllRootToLeafPaths {
         root.getLeft().setRight(new TreeNode(5));
         root.getRight().setLeft(new TreeNode(6));
         root.getRight().setRight(new TreeNode(7));
-        printPaths(root, new ArrayList<>());
+        printPaths(root, new ArrayList<Integer>());
     }
 
     private static void printPaths(TreeNode node, ArrayList<Integer> parentPath) {
