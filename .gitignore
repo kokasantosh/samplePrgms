@@ -156,3 +156,8 @@
 /algos/target/classes/com/sample/tree/PrintNodesAtNthLevel.class
 /algos/target/classes/com/sample/tree/TopAndBottomView.class
 /algos/target/classes/com/sample/tree/TreeHeightFinder.class
+/algos/target/classes/META-INF/algos.kotlin_module
+/algos/target/classes/com/sample/algo/ZaladoTask1.class
+/algos/target/classes/com/sample/algo/*.class
+*.class
+/algos/target/classes/com/sample/javalatestfeatures/*.class
