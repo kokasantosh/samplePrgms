@@ -1,6 +1,5 @@
 package com.sample.algo;
 
-import java.util.Comparator;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -18,7 +17,6 @@ public class FindSquare {
         );
 
     }
-
 
     private static Map<Integer, Integer> findSquare(int A, int B, int sqr, int power, Map<Integer, Integer> map) {
         power = new Double(Math.pow(sqr, 2)).intValue();
