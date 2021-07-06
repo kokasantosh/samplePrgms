@@ -1,6 +1,6 @@
 package com.sample.algo;
 
-public class ZaladoTask1 {
+public class BitMultiplication {
     public static void main(String[] args) {
         int[] a = {1,-2, 0, 5};
         int product = 1;
