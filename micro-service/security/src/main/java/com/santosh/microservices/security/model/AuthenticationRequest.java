@@ -1,4 +1,4 @@
-package com.santosh.microservices.apigateway.model;
+package com.santosh.microservices.security.model;
 
 public class AuthenticationRequest {
 

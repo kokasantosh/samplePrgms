@@ -1,6 +1,6 @@
-package com.santosh.microservices.apigateway.security;
+package com.santosh.microservices.security.security;
 
-import com.santosh.microservices.apigateway.dbcore.UserRepository;
+import com.santosh.microservices.security.dbcore.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

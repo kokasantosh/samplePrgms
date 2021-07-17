@@ -1,4 +1,4 @@
-package com.santosh.microservices.currencyexchangeservice.dbcore;
+package com.santosh.microservices.security.dbcore;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

@@ -1,7 +1,6 @@
-package com.santosh.microservices.currencyexchangeservice.security;
+package com.santosh.microservices.security.security;
 
-import com.santosh.microservices.currencyexchangeservice.filters.JwtRequestFilter;
-import com.santosh.microservices.currencyexchangeservice.service.UserDetailService;
+import com.santosh.microservices.security.filters.JwtRequestFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -30,8 +29,8 @@ public class SecurityConfigurer extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable().authorizeRequests().antMatchers("/h2-console").permitAll().anyRequest().authenticated()
-        .and()
-        .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+        .and().csrf().disable().authorizeRequests().antMatchers("/h2-console").permitAll().anyRequest().authenticated()
+        .and().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
         http.addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class);
     }
 

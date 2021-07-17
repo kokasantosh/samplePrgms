@@ -11,12 +11,12 @@
 
 	<packaging>pom</packaging>
 	<modules>
-	<module>limits-service</module>
-	<module>spring-cloud-config</module>
-	<module>currency-exchange-service</module>
-	<module>currency-conversion-service</module>
-	<module>naming-server</module>
-	<module>api-gateway</module>
-	<module>security</module>
+		<module>limits-service</module>
+		<module>spring-cloud-config</module>
+		<module>currency-exchange-service</module>
+		<module>currency-conversion-service</module>
+		<module>naming-server</module>
+		<module>api-gateway</module>
+		<module>security</module>
 	</modules>
 </project>

@@ -1,7 +1,7 @@
-package com.santosh.microservices.apigateway.filters;
+package com.santosh.microservices.security.filters;
 
-import com.santosh.microservices.apigateway.security.UserDetailService;
-import com.santosh.microservices.apigateway.util.JwtUtil;
+import com.santosh.microservices.security.security.UserDetailService;
+import com.santosh.microservices.security.util.JwtUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
