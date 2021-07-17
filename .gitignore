@@ -161,3 +161,10 @@
 /algos/target/classes/com/sample/algo/*.class
 *.class
 /algos/target/classes/com/sample/javalatestfeatures/*.class
+/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_9_1.xml
+/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_0.xml
+/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_5_1.xml
+/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_5_0.xml
+/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_5_0.xml
+/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_5_0.xml
+/.idea/*

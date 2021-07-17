@@ -1,4 +1,4 @@
-package com.santosh.microservices.currencyexchangeservice;
+package com.santosh.microservices.currencyexchangeservice.dbcore;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
