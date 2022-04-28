@@ -15,8 +15,8 @@ public class MaxSum {
             max = a[0];
             int currMax = a[0];
             for(int i = 1; i < a.length; i++) {
-//                currMax = Math.max(a[i], currMax + a[i]);
-                currMax = currMax>0? currMax + a[i] : a[i];
+                currMax = Math.max(a[i], currMax + a[i]);
+//                currMax = currMax>0? currMax + a[i] : a[i];
                 max = Math.max(max, currMax);
             }
         }

@@ -26,9 +26,9 @@ public class StreamSample {
         System.out.println(list);
     }
 
-    private static Map<Integer, String> doSomething(Integer num) {
-        Map<Integer, String> result = new HashMap<>();
-        result.put(num, "abc");
+    private static List<Integer> doSomething(Integer num) {
+        List<Integer> result = new ArrayList<>();
+        result.add(num+2);
         return result;
     }
 

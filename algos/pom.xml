@@ -25,6 +25,14 @@
             </plugin>
         </plugins>
     </build>
+    <dependencies>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.7.2</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
     <name>algos</name>
 	<description>Demo project for algos</description>
 </project>

@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.security.Principal;
+
 @RestController
 public class CurrencyExchangeController {
     @Autowired
@@ -16,7 +18,7 @@ public class CurrencyExchangeController {
     private CurrencyExchangeRepository currencyExchangeRepository;
 
     @GetMapping("/currency-exchange/from/{from}/to/{to}")
-    public CurrencyExchange retrieveExchange(@PathVariable String from, @PathVariable String to) {
+    public CurrencyExchange retrieveExchange(@PathVariable String from, @PathVariable String to, Principal principal) {
         CurrencyExchange currencyExchange = currencyExchangeRepository.findByFromAndTo(from, to);
         if(currencyExchange == null) {
             throw new RuntimeException("Unable to find data for " + from + " to " + to);

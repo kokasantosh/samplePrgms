@@ -1,0 +1,10 @@
+1. Make it work
+- Visualize the problem as a tree
+- Identify the base cases
+- Implement the tree using the recursion using brute force solution
+- Test it
+
+2. Make it efficient
+- Add the memo object
+- Update the base case that takes/returns the values from memo if exists
+- Store the result in to memo object before returning
